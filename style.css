@@ -1,0 +1,87 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #8facfa;
+}
+
+header {
+    background: #000080;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Estilo para o conteúdo da seção sobre */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Imagem à esquerda */
+.imagem-esquerda {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* Imagem à direita */
+.imagem-direita {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+/* Ajuste de layout para dispositivos menores */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem-esquerda,
+    .imagem-direita {
+        margin: 0 0 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 4px 0;
+    background: #000080;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
